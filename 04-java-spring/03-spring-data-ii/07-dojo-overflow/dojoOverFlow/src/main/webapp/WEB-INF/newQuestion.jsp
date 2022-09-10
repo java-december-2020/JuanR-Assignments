@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1>What is your question?</h1>
-<form:form method="POST" action="/addQuestion" modelAttribute="question">
+<form:form method="POST" action="/questions/addQuestion" modelAttribute="question">
 <div class="form-group">
 <label for="question">Question</label>
 <input type="text" name="question">

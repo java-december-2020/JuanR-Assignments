@@ -38,7 +38,7 @@ public class QuestionController {
 		return "newQuestion.jsp";
 	}
 	@PostMapping("/addQuestion")
-	public String addQuestion(@Valid @ModelAttribute("question")Question question, BindingResult result, Model viewModel) {
+	public String addQuestion(@Valid @ModelAttribute("question")Question question, BindingResult result) {
 		this.qService.createQuestion(question);
 		return "redirect:/";
 	}

@@ -19,4 +19,4 @@ public class CodingController {
 	public String java() {
 		return "Java/Spring is better!";
 	}
-}
+} 

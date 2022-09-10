@@ -28,6 +28,12 @@ public class Question {
 	@DateTimeFormat(pattern="yy-MM-DD HH:mm:ss")
 	private Date updatedAt;
 	
+	// Many To Many
+	@ManyToMany
+	@JoinTable
+		name="tags"
+		joinColumns = @JoinColumn(name="tag_id")
+		inverseJoinColumns = @JoinColumn(name="user")
 	
 	public Question() {
 	}
